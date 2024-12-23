@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        to bottom,
+        rgba(100, 179, 134, 0.8) 50%,
+        rgba(100, 179, 134, 0.8) 50%
+    ), url(Logo/download.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(100, 179, 134, 0.8);
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: #f4d03f;
+    font-weight: bold;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .menu ul li {
+    margin: 0 15px;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .menu ul li a:hover {
+    color: #f4d03f;
+}
+
+/* Hero Section */
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to top right, #64b386, #3a6351);
+    color: white;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color: #f4d03f;
+    font-weight: bold;
+}
+
+.content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.content .cn a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #f4d03f;
+    color: #3a6351;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.content .cn a:hover {
+    background: #3a6351;
+    color: #f4d03f;
+}
+
+/* Form Section */
+.form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3a6351;
+}
+
+.form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #3a6351;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form .btn:hover {
+    background: #f4d03f;
+    color: #3a6351;
+}
+
+/* Additional Page-Specific Styles */
+.page-profil {
+    background: linear-gradient(to bottom, #3a6351, #64b386);
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.page-profil h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.page-profil p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu ul li {
+        margin: 10px 0;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .content .cn a {
+        padding: 10px 20px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        margin: 0 8px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+}
